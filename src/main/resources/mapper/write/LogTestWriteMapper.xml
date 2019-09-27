@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.sharding.msterslave.dao.write.LogTestWriteMapper">
+
+    <insert id="insert" parameterType="com.example.sharding.msterslave.entity.LogTest">
+        insert into log  (message,createtime) values (#{message},#{createtime})
+    </insert>
+
+</mapper>
